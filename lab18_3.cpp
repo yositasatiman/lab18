@@ -10,6 +10,10 @@ using namespace std;
 struct student{
 
     //Define struct student with four member (name ,id , gender, gpa);
+	string name;
+    int id;
+    int gender;
+    double gpa; 
     
 };
 
@@ -66,6 +70,8 @@ int main(){
 		
 		//Use sscanf() to split the values in textline and assign those values to the members of struct s;
 
+
+
 		allstudents.push_back(s); 		
 	}
 	
@@ -85,6 +91,7 @@ int main(){
 			}else{
 			
 			    //Append (push_back) textline to lecture_list[] of the recently added course in allcourses[];
+				
 			    
 			}			
 		}else{
@@ -94,6 +101,7 @@ int main(){
 				student *p = findstudent(allstudents,atof(textline.c_str()));
 				
 				//Append (push_back) p to student_list of the recently added course in allcourses[];
+				p ->
 				
 			}
 		}
